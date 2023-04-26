@@ -50,6 +50,44 @@ public class Calculator {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                num2 = Double.parseDouble(ans.getText());
+
+                if (operation == "+"){
+                        result = num1+num2;
+                        answer = String.format("%.2f",result);
+                        ans.setText(answer);
+                    }
+                    else if(operation == "-"){
+                    result = num1-num2;
+                    answer = String.format("%.2f",result);
+                    ans.setText(answer);
+                    }
+                    else if (operation == "x") {
+                    result = num1*num2;
+                    answer = String.format("%.2f",result);
+                    ans.setText(answer);
+                }
+                else if (operation == "/") {
+                    if(num2 == 0){
+                        ans.setText("Division by zero error!!");
+                    }
+                    else{
+                        result = num1/num2;
+                        answer = String.format("%.2f",result);
+                        ans.setText(answer);
+                    }
+                }
+                else if (operation == "%") {
+                    result = num1%num2;
+                    answer = String.format("%.2f",result);
+                    ans.setText(answer);
+                }
+                else if (operation == "^") {
+                    result = Math.pow(num1,num2);
+                    answer = String.format("%.2f",result);
+                    ans.setText(answer);
+                }
+
             }
         });
         reciprocal.addActionListener(new ActionListener() {
@@ -61,6 +99,11 @@ public class Calculator {
         rase_to_3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                num1 = Double.parseDouble(ans.getText());
+                ans.setText("");
+                result = Math.pow(num1,3);
+                answer = String.format("%.2f",result);
+                ans.setText(answer);
 
             }
         });
@@ -146,6 +189,11 @@ public class Calculator {
         x_rase_to_2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                num1 = Double.parseDouble(ans.getText());
+                ans.setText("");
+                result = Math.pow(num1,2);
+                answer = String.format("%.2f",result);
+                ans.setText(answer);
 
             }
         });
