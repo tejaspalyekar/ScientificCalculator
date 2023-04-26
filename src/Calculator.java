@@ -50,6 +50,70 @@ public class Calculator {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                if (operation == "sin") {
+                    ans.setText("");
+                    answer = String.format("%.2f",Math.sin(num1));
+                    ans.setText(answer);
+                }
+                else if (operation == "cos") {
+                    ans.setText("");
+                    answer = String.format("%.2f",Math.cos(num1));
+                    ans.setText(answer);
+                }
+                else if (operation == "tan") {
+                    ans.setText("");
+                    answer = String.format("%.2f",Math.tan(num1));
+                    ans.setText(answer);
+                } else if (operation == "log") {
+                    ans.setText("");
+                    answer = String.format("%.2f",Math.log(num1));
+                    ans.setText(answer);
+                } else if (operation == "squareroot") {
+                    ans.setText("");
+                    answer = String.format("%.2f",Math.sqrt(num1));
+                    ans.setText(answer);
+                }
+
+
+                num2 = Double.parseDouble(ans.getText());
+
+                if (operation == "+"){
+                        result = num1+num2;
+                        answer = String.format("%.2f",result);
+                        ans.setText(answer);
+                    }
+                    else if(operation == "-"){
+                    result = num1-num2;
+                    answer = String.format("%.2f",result);
+                    ans.setText(answer);
+                    }
+                    else if (operation == "x") {
+                    result = num1*num2;
+                    answer = String.format("%.2f",result);
+                    ans.setText(answer);
+                }
+
+                else if (operation == "/") {
+                    if(num2 == 0){
+                        ans.setText("Division by zero error!!");
+                    }
+                    else{
+                        result = num1/num2;
+                        answer = String.format("%.2f",result);
+                        ans.setText(answer);
+                    }
+                }
+                else if (operation == "%") {
+                    result = num1%num2;
+                    answer = String.format("%.2f",result);
+                    ans.setText(answer);
+                }
+                else if (operation == "^") {
+                    result = Math.pow(num1,num2);
+                    answer = String.format("%.2f",result);
+                    ans.setText(answer);
+                }
+
             }
         });
         reciprocal.addActionListener(new ActionListener() {
@@ -61,12 +125,20 @@ public class Calculator {
         rase_to_3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                num1 = Double.parseDouble(ans.getText());
+                ans.setText("");
+                result = Math.pow(num1,3);
+                answer = String.format("%.2f",result);
+                ans.setText(answer);
 
             }
         });
         log.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                num1 = Double.parseDouble(ans.getText());
+                ans.setText("log("+num1+")");
+                operation = "log";
 
             }
         });
@@ -81,7 +153,8 @@ public class Calculator {
         dot.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                int no = Integer.parseInt(ans.getText());
+                ans.setText(no+".");
             }
         });
         xrasetoy.addActionListener(new ActionListener() {
@@ -95,31 +168,43 @@ public class Calculator {
         deg.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                num1 = Double.parseDouble(ans.getText());
+                ans.setText("deg("+num1+")");
+                operation = "deg";
 
             }
         });
         sin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                num1 = Double.parseDouble(ans.getText());
+                 ans.setText("sin("+num1+")");
+                 operation = "sin";
 
             }
         });
         cos.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                num1 = Double.parseDouble(ans.getText());
+                ans.setText("cos("+num1+")");
+                operation = "cos";
             }
         });
         tan.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                num1 = Double.parseDouble(ans.getText());
+                ans.setText("tan("+num1+")");
+                operation = "tan";
             }
         });
         squareroot.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                num1 = Double.parseDouble(ans.getText());
+                ans.setText("√("+num1+")");
+                operation = "squareroot";
             }
         });
 
@@ -139,13 +224,18 @@ public class Calculator {
             @Override
             public void actionPerformed(ActionEvent e) {
                 num1 = Double.parseDouble(ans.getText());
-                ans.setText("");
+                ans.setText(num1+"+");
                 operation = "+";
             }
         });
         x_rase_to_2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                num1 = Double.parseDouble(ans.getText());
+                ans.setText("");
+                result = Math.pow(num1,2);
+                answer = String.format("%.2f",result);
+                ans.setText(answer);
 
             }
         });
@@ -227,6 +317,10 @@ public class Calculator {
             public void actionPerformed(ActionEvent e) {
 
                 String num = ans.getText() + a2Button.getText();
+                /*if(ans.getText() != ""){
+                    String a = ans.getText();
+                    ans.setText(a+num);
+                }*/
                 ans.setText(num);
             }
         });
