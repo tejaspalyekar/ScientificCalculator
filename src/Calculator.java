@@ -50,6 +50,7 @@ public class Calculator {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+
                 if (operation == "sin") {
                     ans.setText("");
                     answer = String.format("%.2f",Math.sin(num1));
@@ -73,6 +74,7 @@ public class Calculator {
                     answer = String.format("%.2f",Math.sqrt(num1));
                     ans.setText(answer);
                 }
+
 
 
                 num2 = Double.parseDouble(ans.getText());

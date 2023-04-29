@@ -58,9 +58,13 @@
       </component>
       <component id="2c86a" class="javax.swing.JButton" binding="a0Button">
         <constraints>
+<<<<<<< HEAD
           <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="44" height="30"/>
           </grid>
+=======
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+>>>>>>> origin/master
         </constraints>
         <properties>
           <background color="-16436129"/>
@@ -70,9 +74,13 @@
       </component>
       <component id="f1c3" class="javax.swing.JButton" binding="equalsto">
         <constraints>
+<<<<<<< HEAD
           <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="44" height="30"/>
           </grid>
+=======
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+>>>>>>> origin/master
         </constraints>
         <properties>
           <background color="-15965440"/>
@@ -163,9 +171,13 @@
       </component>
       <component id="eadfd" class="javax.swing.JButton" binding="x_rase_to_2">
         <constraints>
+<<<<<<< HEAD
           <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="44" height="30"/>
           </grid>
+=======
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+>>>>>>> origin/master
         </constraints>
         <properties>
           <background color="-16436129"/>
@@ -175,9 +187,13 @@
       </component>
       <component id="56fd9" class="javax.swing.JButton" binding="squareroot">
         <constraints>
+<<<<<<< HEAD
           <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="44" height="30"/>
           </grid>
+=======
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+>>>>>>> origin/master
         </constraints>
         <properties>
           <background color="-16436129"/>
@@ -230,9 +246,13 @@
       </component>
       <component id="948c0" class="javax.swing.JButton" binding="xrasetoy">
         <constraints>
+<<<<<<< HEAD
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="44" height="30"/>
           </grid>
+=======
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+>>>>>>> origin/master
         </constraints>
         <properties>
           <background color="-16436129"/>
@@ -285,9 +305,13 @@
       </component>
       <component id="1ea19" class="javax.swing.JButton" binding="reciprocal">
         <constraints>
+<<<<<<< HEAD
           <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="44" height="30"/>
           </grid>
+=======
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+>>>>>>> origin/master
         </constraints>
         <properties>
           <background color="-16436129"/>
