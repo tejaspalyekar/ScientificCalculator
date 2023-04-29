@@ -1,3 +1,2 @@
 # ScientificCalculator
-![Alt text](![scientificcal1](https://user-images.githubusercontent.com/66875860/235314081-9d88b00c-ab51-4000-9e82-64c7ab0a060b.png)
-)
+![scientificcal1](https://user-images.githubusercontent.com/66875860/235314160-f4db57ed-e367-4d46-8abc-726dac0da6cd.png)
